@@ -9,4 +9,14 @@
         <target>lightningCommunity__Page</target>
         <target>lightningCommunity__Default</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="recordId"
+                type="String"
+                label="Record Id"
+                description="The Id of the order associated with the component."
+                default="{!record.Id}"/>
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>
